@@ -3,13 +3,13 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC7ZdVCRHJV_4yx2hZfW2N-C3t_5mZO9Ew",
-  authDomain: "reminder-app-16ac3.firebaseapp.com",
-  projectId: "reminder-app-16ac3",
-  storageBucket: "reminder-app-16ac3.appspot.com",
-  messagingSenderId: "749368436075",
-  appId: "1:749368436075:web:d4f41c6dd1a3fba7ea582e",
-  measurementId: "G-4VSG1C6J3M",
+  apiKey: "AIzaSyBl1rPQn2GXZLCTP-mzU4IGJRN9be2JYbI",
+  authDomain: "reminder-app-7c70a.firebaseapp.com",
+  projectId: "reminder-app-7c70a",
+  storageBucket: "reminder-app-7c70a.appspot.com",
+  messagingSenderId: "97124768499",
+  appId: "1:97124768499:web:b38af1ef9b034fcea77586",
+  measurementId: "G-4VSG1C6J3M"
 };
 
 const app = initializeApp(firebaseConfig);
