@@ -15,6 +15,7 @@ const Auth = () => {
         // This gives you a Google Access Token. You can use it to access the Google API.
         const credential = GoogleAuthProvider.credentialFromResult(result);
         const token = credential.accessToken;
+        const displayName = credential.displayName;
         // The signed-in user info.
         const user = result.user;
         // ...
@@ -33,14 +34,17 @@ const Auth = () => {
 
   return (
     <Box position={"fixed"} top="5%" right="5%">
-      <Button onClick={() => toggleColorMode()}>
+      {/* <Button onClick={() => toggleColorMode()}>
         {colorMode == "dark" ? <FaSun /> : <FaMoon />}
-      </Button>{" "}
+      </Button>{" "} */}
       <br />
+
+     
       {isLoggedIn && (
         <>
           {/* <Text color="green.500">{user.email}</Text> */}
           <Link color="red.500" onClick={() => auth.signOut()}>
+            
             Logout
           </Link>
         </>
